@@ -29,7 +29,11 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
+
 let canvas = Canvas(width: 300, height: 300)
+canvas.fillColor = Color.black
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 00, width: 300, height: 300)
+
 
 // No borders
 canvas.drawShapesWithBorders = false
@@ -38,6 +42,29 @@ canvas.drawShapesWithBorders = false
 canvas.defaultLineWidth = 5
 
 // Add your code below... remember to use comments to indicate your intent
+
+
+canvas.fillColor = Color(hue: 120, saturation: 80, brightness: 100, alpha: 80)
+canvas.drawEllipse(centreX: 80, centreY: 200, width: 100, height: 100, borderWidth: 1)
+canvas.drawRectangle(bottomLeftX: 75, bottomLeftY: 25, width: 6, height: 125)
+
+
+
+//yellow
+canvas.fillColor = Color(hue: 55, saturation: 90, brightness: 100, alpha: 70)
+canvas.drawEllipse(centreX: 130, centreY: 200, width: 100, height: 100, borderWidth: 1)
+canvas.drawRectangle(bottomLeftX: 125, bottomLeftY: 25, width: 6, height: 125)
+
+
+
+canvas.fillColor = Color(hue: 2, saturation: 100, brightness: 90, alpha: 60)
+canvas.drawEllipse(centreX: 180, centreY: 200, width: 100, height: 100, borderWidth: 1)
+canvas.drawRectangle(bottomLeftX: 175, bottomLeftY: 25, width: 6, height: 125)
+
+
+canvas.fillColor = Color(hue: 215, saturation: 100, brightness: 100, alpha: 70)
+canvas.drawEllipse(centreX: 230, centreY: 200, width: 100, height: 100, borderWidth: 1)
+canvas.drawRectangle(bottomLeftX: 225, bottomLeftY: 25, width: 6, height: 125)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.

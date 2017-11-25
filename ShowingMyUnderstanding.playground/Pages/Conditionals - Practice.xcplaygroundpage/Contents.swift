@@ -29,9 +29,14 @@ let canvas = Canvas(width: 300, height: 300)
 let number = random(from: 0, toButNotIncluding: 2)
 
 // Replace this comment and add your code below...
-
+if number == 0 {
+    canvas.drawRectangle(bottomLeftX: 150, bottomLeftY: 150, width: 40, height: 40)
+} else {
+    canvas.drawEllipse(centreX: 50, centreY: 50, width: 100, height: 100, borderWidth: 2)
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
 PlaygroundPage.current.liveView = canvas.imageView
+
